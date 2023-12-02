@@ -8,6 +8,7 @@ function App() {
   return (
     <>
     <h1>Happy Birthday!!</h1>
+    <h2>la la la </h2>
     </>
   )
 }
