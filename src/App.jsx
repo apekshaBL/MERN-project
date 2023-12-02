@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import{BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home from "./Pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Profile from "./pages/Profile.jsx";
+import  Signin from "./pages/Signin.jsx";
+import Signup from "./pages/Signup.jsx";
 
-function App() {
-
+export default function App() {
   return (
-    <>
-    <h1>Happy Birthday!!</h1>
-    <h2>la la la </h2>
-    </>
+   <BrowserRouter>
+   <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/About" element={<About/>}/>
+    <Route path="/Profile" element={<Profile/>}/>
+    <Route path="/Signin" element ={<Signin/>}/>
+    <Route path="/Signup" element={<Signup/>}/>  
+   </Routes>
+   </BrowserRouter>
   )
 }
-
-export default App
